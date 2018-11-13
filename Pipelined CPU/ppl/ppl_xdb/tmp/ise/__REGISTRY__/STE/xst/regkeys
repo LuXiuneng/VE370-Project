@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/ppl.ise -intstyle ise -ifn C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/Pipeline_Demo.xst -ofn C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/Pipeline_Demo.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s
