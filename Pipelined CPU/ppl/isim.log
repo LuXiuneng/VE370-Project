@@ -1,0 +1,38 @@
+Command line:
+   ./test_pipe_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  55136
+WARNING:Simulator:679 -  For instance test_pipe/uut/, width 5 of formal port
+   register_switch is not equal to width 1 of actual variable register_switch. 
+
+Fri Nov 24 19:50:17 2017
+
+Total Line Count : 182
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 172.798 Meg
+
+ Total Signals          : 174
+ Total Nets             : 1153
+ Total Signal Drivers   : 97
+ Total Blocks           : 23
+ Total Primitive Blocks : 21
+ Total Processes        : 121
+ Total Traceable Variables  : 43
+ Total Scalar Nets and Variables : 8220
+ntrace select -o on -n /test_pipe/uut/pcout 
+ntrace select -o on -n /test_pipe/clock 
+ntrace select -o on -n /test_pipe/uut/reg_a/register 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.8125 sec
+
+ Current Memory Usage: 183.276 Meg
+
+Fri Nov 24 19:53:34 2017
+

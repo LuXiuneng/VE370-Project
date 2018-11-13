@@ -1,0 +1,12 @@
+xst -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -intstyle ise -ifn "C:/Users/jy/Desktop/20171123/ppl/Pipeline_Demo.xst" -ofn "C:/Users/jy/Desktop/20171123/ppl/Pipeline_Demo.syr"
+ngdbuild -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Pipeline_Demo.ngc" Pipeline_Demo.ngd
+map -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Pipeline_Demo_map.ncd Pipeline_Demo.ngd Pipeline_Demo.pcf
+par -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -w -intstyle ise -ol std -t 1 Pipeline_Demo_map.ncd Pipeline_Demo.ncd Pipeline_Demo.pcf
+trce -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -intstyle ise -e 3 -s 4 -xml Pipeline_Demo Pipeline_Demo.ncd -o Pipeline_Demo.twr Pipeline_Demo.pcf
+ngdbuild -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Pipeline_Demo.ngc" Pipeline_Demo.ngd
+map -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -pr off -k 4 -c 100 -o Pipeline_Demo_map.ncd Pipeline_Demo.ngd Pipeline_Demo.pcf
+par -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -w -intstyle ise -ol std -t 1 Pipeline_Demo_map.ncd Pipeline_Demo.ncd Pipeline_Demo.pcf
+trce -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -intstyle ise -e 3 -s 4 -xml Pipeline_Demo Pipeline_Demo.ncd -o Pipeline_Demo.twr Pipeline_Demo.pcf -ucf Pipeline_Demo.ucf
+bitgen -ise "C:/Users/jy/Desktop/20171123/ppl/ppl.ise" -intstyle ise -f Pipeline_Demo.ut Pipeline_Demo.ncd
+xst -ise "C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/ppl.ise" -intstyle ise -ifn "C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/Pipeline_Demo.xst" -ofn "C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/Pipeline_Demo.syr"
+ngdbuild -ise "C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/ppl.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s1200e-fg320-4 "Pipeline_Demo.ngc" Pipeline_Demo.ngd

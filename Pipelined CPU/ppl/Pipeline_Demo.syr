@@ -1,0 +1,1122 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.94 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/My/Desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.94 secs
+ 
+--> Reading design: Pipeline_Demo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Pipeline_Demo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Pipeline_Demo"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : Pipeline_Demo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Pipeline_Demo.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../Zero.v" in library work
+Compiling verilog file "../Sign_Extension.v" in library work
+Module <Zero> compiled
+Compiling verilog file "../Register_File.v" in library work
+Module <Sign_Extension> compiled
+Compiling verilog file "../PC_Choice.v" in library work
+Module <Register_File> compiled
+Compiling verilog file "../PC.v" in library work
+Module <PC_Choice> compiled
+Compiling verilog file "../mux.v" in library work
+Module <PC> compiled
+Compiling verilog file "../Jump_addr.v" in library work
+Module <mux> compiled
+Compiling verilog file "../Instruction_Memory.v" in library work
+Module <Jump_addr> compiled
+Compiling verilog file "../HazardDetectionUnit.v" in library work
+Module <Instruction_Memory> compiled
+Compiling verilog file "../Data_Memory.v" in library work
+Module <HazardDetectionUnit> compiled
+Compiling verilog file "../Control_Unit.v" in library work
+Module <Data_Memory> compiled
+Compiling verilog file "../Bypassign_Unit.v" in library work
+Module <Control_Unit> compiled
+Compiling verilog file "../Branch_addr.v" in library work
+Module <Bypassign_Unit> compiled
+Compiling verilog file "../ALU_Control.v" in library work
+Module <Branch_addr> compiled
+Compiling verilog file "../ALU.v" in library work
+Module <ALU_Control> compiled
+Compiling verilog file "../SSD.v" in library work
+Module <ALU> compiled
+Compiling verilog file "../Ring_counter.v" in library work
+Module <SSD> compiled
+Module <Ring_counter> compiled
+Module <counter> compiled
+Compiling verilog file "../pipeline.v" in library work
+Module <ring> compiled
+Compiling verilog file "../Divider500.v" in library work
+Module <pipeline> compiled
+Module <Divider500> compiled
+Module <counter500> compiled
+Compiling verilog file "../Pipeline_Demo.v" in library work
+Module <DFF> compiled
+Module <Pipeline_Demo> compiled
+No errors in compilation
+Analysis of file <"Pipeline_Demo.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Pipeline_Demo> in library <work>.
+
+Analyzing hierarchy for module <Divider500> in library <work>.
+
+Analyzing hierarchy for module <Ring_counter> in library <work>.
+
+Analyzing hierarchy for module <pipeline> in library <work>.
+
+Analyzing hierarchy for module <SSD> in library <work>.
+
+Analyzing hierarchy for module <counter500> in library <work>.
+
+Analyzing hierarchy for module <DFF> in library <work>.
+
+Analyzing hierarchy for module <counter> in library <work>.
+
+Analyzing hierarchy for module <ring> in library <work>.
+
+Analyzing hierarchy for module <PC> in library <work>.
+
+Analyzing hierarchy for module <Instruction_Memory> in library <work>.
+
+Analyzing hierarchy for module <Sign_Extension> in library <work>.
+
+Analyzing hierarchy for module <Control_Unit> in library <work>.
+
+Analyzing hierarchy for module <HazardDetectionUnit> in library <work>.
+
+Analyzing hierarchy for module <Register_File> in library <work>.
+
+Analyzing hierarchy for module <mux> in library <work> with parameters.
+	bitnum = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <Zero> in library <work>.
+
+Analyzing hierarchy for module <Branch_addr> in library <work>.
+
+Analyzing hierarchy for module <mux> in library <work> with parameters.
+	bitnum = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <Jump_addr> in library <work>.
+
+Analyzing hierarchy for module <PC_Choice> in library <work>.
+
+Analyzing hierarchy for module <mux> in library <work> with parameters.
+	bitnum = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <ALU_Control> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work>.
+
+Analyzing hierarchy for module <mux> in library <work> with parameters.
+	bitnum = "00000000000000000000000000000101"
+
+Analyzing hierarchy for module <Bypassign_Unit> in library <work>.
+
+Analyzing hierarchy for module <Data_Memory> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Pipeline_Demo>.
+WARNING:Xst:905 - "../Pipeline_Demo.v" line 70: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <SSD1>, <SSD2>, <SSD3>, <SSD4>
+Module <Pipeline_Demo> is correct for synthesis.
+ 
+Analyzing module <Divider500> in library <work>.
+Module <Divider500> is correct for synthesis.
+ 
+Analyzing module <counter500> in library <work>.
+Module <counter500> is correct for synthesis.
+ 
+Analyzing module <DFF> in library <work>.
+Module <DFF> is correct for synthesis.
+ 
+Analyzing module <Ring_counter> in library <work>.
+Module <Ring_counter> is correct for synthesis.
+ 
+Analyzing module <counter> in library <work>.
+Module <counter> is correct for synthesis.
+ 
+Analyzing module <ring> in library <work>.
+Module <ring> is correct for synthesis.
+ 
+Analyzing module <pipeline> in library <work>.
+Module <pipeline> is correct for synthesis.
+ 
+Analyzing module <PC> in library <work>.
+Module <PC> is correct for synthesis.
+ 
+Analyzing module <Instruction_Memory> in library <work>.
+Module <Instruction_Memory> is correct for synthesis.
+ 
+Analyzing module <Sign_Extension> in library <work>.
+Module <Sign_Extension> is correct for synthesis.
+ 
+Analyzing module <Control_Unit> in library <work>.
+Module <Control_Unit> is correct for synthesis.
+ 
+Analyzing module <HazardDetectionUnit> in library <work>.
+Module <HazardDetectionUnit> is correct for synthesis.
+ 
+Analyzing module <Register_File> in library <work>.
+Module <Register_File> is correct for synthesis.
+ 
+Analyzing module <mux.1> in library <work>.
+	bitnum = 32'sb00000000000000000000000000100000
+Module <mux.1> is correct for synthesis.
+ 
+Analyzing module <Zero> in library <work>.
+Module <Zero> is correct for synthesis.
+ 
+Analyzing module <Branch_addr> in library <work>.
+Module <Branch_addr> is correct for synthesis.
+ 
+Analyzing module <mux.2> in library <work>.
+	bitnum = 32'sb00000000000000000000000000001000
+Module <mux.2> is correct for synthesis.
+ 
+Analyzing module <Jump_addr> in library <work>.
+Module <Jump_addr> is correct for synthesis.
+ 
+Analyzing module <PC_Choice> in library <work>.
+Module <PC_Choice> is correct for synthesis.
+ 
+Analyzing module <mux.3> in library <work>.
+	bitnum = 32'sb00000000000000000000000000100000
+Module <mux.3> is correct for synthesis.
+ 
+Analyzing module <ALU_Control> in library <work>.
+Module <ALU_Control> is correct for synthesis.
+ 
+Analyzing module <ALU> in library <work>.
+Module <ALU> is correct for synthesis.
+ 
+Analyzing module <mux.4> in library <work>.
+	bitnum = 32'sb00000000000000000000000000000101
+Module <mux.4> is correct for synthesis.
+ 
+Analyzing module <Bypassign_Unit> in library <work>.
+Module <Bypassign_Unit> is correct for synthesis.
+ 
+Analyzing module <Data_Memory> in library <work>.
+INFO:Xst:1433 - Contents of array <D_Memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <D_Memory> may be accessed with an index that does not cover the full array size.
+Module <Data_Memory> is correct for synthesis.
+ 
+Analyzing module <SSD> in library <work>.
+Module <SSD> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SSD>.
+    Related source file is "../SSD.v".
+    Found 16x7-bit ROM for signal <C>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <SSD> synthesized.
+
+
+Synthesizing Unit <counter500>.
+    Related source file is "../Divider500.v".
+    Found 17-bit up counter for signal <Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter500> synthesized.
+
+
+Synthesizing Unit <DFF>.
+    Related source file is "../Divider500.v".
+    Found 1-bit register for signal <clock_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <DFF> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "../Ring_counter.v".
+    Found 2-bit up counter for signal <Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <ring>.
+    Related source file is "../Ring_counter.v".
+    Found 4x4-bit ROM for signal <an>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <ring> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "../PC.v".
+    Found 32-bit register for signal <pc>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <Instruction_Memory>.
+    Related source file is "../Instruction_Memory.v".
+WARNING:Xst:647 - Input <pc<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <Ins_Memory> is used but never assigned. Tied to default value.
+    Found 128x32-bit ROM for signal <$COND_2>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Instruction_Memory> synthesized.
+
+
+Synthesizing Unit <Sign_Extension>.
+    Related source file is "../Sign_Extension.v".
+Unit <Sign_Extension> synthesized.
+
+
+Synthesizing Unit <Control_Unit>.
+    Related source file is "../Control_Unit.v".
+Unit <Control_Unit> synthesized.
+
+
+Synthesizing Unit <HazardDetectionUnit>.
+    Related source file is "../HazardDetectionUnit.v".
+    Found 5-bit comparator equal for signal <PCWrite$cmp_eq0000> created at line 26.
+    Found 5-bit comparator equal for signal <PCWrite$cmp_eq0001> created at line 26.
+    Found 5-bit comparator equal for signal <PCWrite$cmp_eq0002> created at line 26.
+    Found 5-bit comparator equal for signal <PCWrite$cmp_eq0003> created at line 26.
+    Found 5-bit comparator equal for signal <PCWrite$cmp_eq0004> created at line 26.
+    Found 5-bit comparator equal for signal <PCWrite$cmp_eq0005> created at line 26.
+    Summary:
+	inferred   6 Comparator(s).
+Unit <HazardDetectionUnit> synthesized.
+
+
+Synthesizing Unit <Register_File>.
+    Related source file is "../Register_File.v".
+    Found 32x32-bit dual-port RAM <Mram_register> for signal <register>.
+    Found 32x32-bit dual-port RAM <Mram_register_ren> for signal <register>.
+    Found 32x32-bit dual-port RAM <Mram_register_ren_1> for signal <register>.
+    Summary:
+	inferred   3 RAM(s).
+Unit <Register_File> synthesized.
+
+
+Synthesizing Unit <mux_1>.
+    Related source file is "../mux.v".
+Unit <mux_1> synthesized.
+
+
+Synthesizing Unit <Zero>.
+    Related source file is "../Zero.v".
+    Found 32-bit comparator equal for signal <ifZero$cmp_eq0000> created at line 27.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Zero> synthesized.
+
+
+Synthesizing Unit <Branch_addr>.
+    Related source file is "../Branch_addr.v".
+WARNING:Xst:647 - Input <branch_immediate_signext<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit adder for signal <addr>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Branch_addr> synthesized.
+
+
+Synthesizing Unit <mux_2>.
+    Related source file is "../mux.v".
+Unit <mux_2> synthesized.
+
+
+Synthesizing Unit <Jump_addr>.
+    Related source file is "../Jump_addr.v".
+WARNING:Xst:647 - Input <pcp4<27:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Jump_addr> synthesized.
+
+
+Synthesizing Unit <PC_Choice>.
+    Related source file is "../PC_Choice.v".
+    Found 32-bit 4-to-1 multiplexer for signal <oldpc>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <PC_Choice> synthesized.
+
+
+Synthesizing Unit <mux_3>.
+    Related source file is "../mux.v".
+Unit <mux_3> synthesized.
+
+
+Synthesizing Unit <ALU_Control>.
+    Related source file is "../ALU_Control.v".
+    Found 4-bit 4-to-1 multiplexer for signal <ALUCtl>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <ALU_Control> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "../ALU.v".
+    Found 32-bit addsub for signal <ALU_Result$addsub0000>.
+    Found 32-bit comparator less for signal <ALU_Result$cmp_lt0000> created at line 24.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <mux_4>.
+    Related source file is "../mux.v".
+Unit <mux_4> synthesized.
+
+
+Synthesizing Unit <Bypassign_Unit>.
+    Related source file is "../Bypassign_Unit.v".
+    Found 5-bit comparator equal for signal <FA_0$cmp_eq0000> created at line 30.
+    Found 5-bit comparator equal for signal <FA_1$cmp_eq0000> created at line 29.
+    Found 5-bit comparator equal for signal <FB_0$cmp_eq0000> created at line 32.
+    Found 5-bit comparator equal for signal <FB_1$cmp_eq0000> created at line 31.
+    Found 5-bit comparator equal for signal <FwA$cmp_eq0000> created at line 34.
+    Found 5-bit comparator equal for signal <FwB$cmp_eq0000> created at line 35.
+    Summary:
+	inferred   6 Comparator(s).
+Unit <Bypassign_Unit> synthesized.
+
+
+Synthesizing Unit <Data_Memory>.
+    Related source file is "../Data_Memory.v".
+WARNING:Xst:647 - Input <DAddress<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <address> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32x32-bit dual-port RAM <Mram_D_Memory> for signal <D_Memory>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <Data_Memory> synthesized.
+
+
+Synthesizing Unit <Divider500>.
+    Related source file is "../Divider500.v".
+WARNING:Xst:646 - Signal <Q<14:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Q<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Q<6:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Divider500> synthesized.
+
+
+Synthesizing Unit <Ring_counter>.
+    Related source file is "../Ring_counter.v".
+Unit <Ring_counter> synthesized.
+
+
+Synthesizing Unit <pipeline>.
+    Related source file is "../pipeline.v".
+WARNING:Xst:646 - Signal <idex<142:111>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit 4-to-1 multiplexer for signal <aluin0>.
+    Found 73-bit register for signal <exmem>.
+    Found 32-bit 4-to-1 multiplexer for signal <FBMUXres>.
+    Found 8-bit register for signal <idex<150:143>>.
+    Found 111-bit register for signal <idex<110:0>>.
+    Found 64-bit register for signal <ifid>.
+    Found 71-bit register for signal <memwb>.
+    Found 32-bit adder for signal <pcadd4>.
+    Summary:
+	inferred 327 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  64 Multiplexer(s).
+Unit <pipeline> synthesized.
+
+
+Synthesizing Unit <Pipeline_Demo>.
+    Related source file is "../Pipeline_Demo.v".
+WARNING:Xst:646 - Signal <num_out<31:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 7-bit latch for signal <cathodes>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <Pipeline_Demo> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 32x32-bit dual-port RAM                               : 4
+# ROMs                                                 : 6
+ 128x32-bit ROM                                        : 1
+ 16x7-bit ROM                                          : 4
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 329
+ 1-bit register                                        : 328
+ 32-bit register                                       : 1
+# Latches                                              : 1
+ 7-bit latch                                           : 1
+# Comparators                                          : 14
+ 32-bit comparator equal                               : 1
+ 32-bit comparator less                                : 1
+ 5-bit comparator equal                                : 12
+# Multiplexers                                         : 4
+ 32-bit 4-to-1 multiplexer                             : 3
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s1200e.nph' in environment C:\Xilinx\10.1\ISE.
+
+Synthesizing (advanced) Unit <Data_Memory>.
+INFO:Xst - HDL ADVISOR - The RAM <Mram_D_Memory> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | fall     |
+    |     weA            | connected to signal <MemWrite>      | high     |
+    |     addrA          | connected to signal <DAddress>      |          |
+    |     diA            | connected to signal <Data_in>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <DAddress>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Data_Memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Register_File>.
+INFO:Xst - HDL ADVISOR - The RAM <Mram_register> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | fall     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <WriteReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <RdReg1>        |          |
+    |     doB            | connected to signal <RdData1>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst - HDL ADVISOR - The RAM <Mram_register_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | fall     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <WriteReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <RdReg2>        |          |
+    |     doB            | connected to signal <RdData2>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst - HDL ADVISOR - The RAM <Mram_register_ren_1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clock>         | fall     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <WriteReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <registerswitch> |          |
+    |     doB            | connected to signal <registerout>   |          |
+    -----------------------------------------------------------------------
+Unit <Register_File> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 32x32-bit dual-port distributed RAM                   : 4
+# ROMs                                                 : 6
+ 128x32-bit ROM                                        : 1
+ 16x7-bit ROM                                          : 4
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 360
+ Flip-Flops                                            : 360
+# Latches                                              : 1
+ 7-bit latch                                           : 1
+# Comparators                                          : 14
+ 32-bit comparator equal                               : 1
+ 32-bit comparator less                                : 1
+ 5-bit comparator equal                                : 12
+# Multiplexers                                         : 4
+ 32-bit 4-to-1 multiplexer                             : 3
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <idex_46> in Unit <pipeline> is equivalent to the following 15 FFs/Latches, which will be removed : <idex_43> <idex_45> <idex_44> <idex_40> <idex_42> <idex_41> <idex_39> <idex_38> <idex_35> <idex_37> <idex_36> <idex_34> <idex_33> <idex_32> <idex_31> 
+INFO:Xst:2261 - The FF/Latch <idex_149> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <idex_148> 
+INFO:Xst:2261 - The FF/Latch <exmem_71> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <exmem_69> 
+WARNING:Xst:1293 - FF/Latch <ifid_62> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ifid_50> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ifid_46> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ifid_42> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ifid_41> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ifid_40> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ifid_39> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <idex_29> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <idex_25> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <idex_22> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <idex_24> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <idex_23> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <idex_7> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <idex_3> has a constant value of 0 in block <pipeline>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Pipeline_Demo> ...
+WARNING:Xst:1294 - Latch <cathodes_0> is equivalent to a wire in block <Pipeline_Demo>.
+WARNING:Xst:1294 - Latch <cathodes_1> is equivalent to a wire in block <Pipeline_Demo>.
+WARNING:Xst:1294 - Latch <cathodes_2> is equivalent to a wire in block <Pipeline_Demo>.
+WARNING:Xst:1294 - Latch <cathodes_3> is equivalent to a wire in block <Pipeline_Demo>.
+WARNING:Xst:1294 - Latch <cathodes_4> is equivalent to a wire in block <Pipeline_Demo>.
+WARNING:Xst:1294 - Latch <cathodes_5> is equivalent to a wire in block <Pipeline_Demo>.
+WARNING:Xst:1294 - Latch <cathodes_6> is equivalent to a wire in block <Pipeline_Demo>.
+
+Optimizing unit <PC> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <Data_Memory> ...
+
+Optimizing unit <pipeline> ...
+INFO:Xst:2261 - The FF/Latch <idex_27> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <idex_1> 
+INFO:Xst:2261 - The FF/Latch <idex_26> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <idex_0> 
+INFO:Xst:2261 - The FF/Latch <ifid_63> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <ifid_58> 
+INFO:Xst:2261 - The FF/Latch <ifid_54> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <ifid_45> 
+INFO:Xst:2261 - The FF/Latch <idex_28> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <idex_2> 
+INFO:Xst:2261 - The FF/Latch <idex_30> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <idex_4> 
+INFO:Xst:2261 - The FF/Latch <idex_28> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <idex_11> 
+INFO:Xst:2261 - The FF/Latch <idex_28> in Unit <pipeline> is equivalent to the following FF/Latch, which will be removed : <idex_11> 
+WARNING:Xst:2677 - Node <M4/pc_a/pc_16> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_17> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_18> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_19> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_20> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_21> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_22> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_23> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_24> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_25> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_26> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_27> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_28> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_29> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_30> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/pc_a/pc_31> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_164> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_163> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_161> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_160> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_162> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_159> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_158> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_156> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_155> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_157> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_154> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_153> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_151> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_150> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_152> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_148> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_147> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_149> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_145> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_144> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_146> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_143> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_142> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_140> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_139> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_141> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_137> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_136> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_138> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_134> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_133> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/reg_a/Mram_register_ren_135> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_16> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_17> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_18> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_19> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_21> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_22> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_20> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_24> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_25> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_23> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_27> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_28> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_26> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_29> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_30> of sequential type is unconnected in block <Pipeline_Demo>.
+WARNING:Xst:2677 - Node <M4/ifid_31> of sequential type is unconnected in block <Pipeline_Demo>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Pipeline_Demo, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 309
+ Flip-Flops                                            : 309
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Pipeline_Demo.ngr
+Top Level Output File Name         : Pipeline_Demo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 20
+
+Cell Usage :
+# BELS                             : 1289
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 33
+#      LUT2                        : 49
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 309
+#      LUT3_D                      : 13
+#      LUT3_L                      : 31
+#      LUT4                        : 515
+#      LUT4_D                      : 9
+#      LUT4_L                      : 27
+#      MUXCY                       : 121
+#      MUXF5                       : 99
+#      VCC                         : 1
+#      XORCY                       : 74
+# FlipFlops/Latches                : 309
+#      FDC                         : 254
+#      FDCE                        : 55
+# RAMS                             : 224
+#      RAM16X1D                    : 224
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 18
+#      IBUF                        : 7
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                      679  out of   8672     7%  
+ Number of Slice Flip Flops:            309  out of  17344     1%  
+ Number of 4 input LUTs:               1441  out of  17344     8%  
+    Number used as logic:               993
+    Number used as RAMs:                448
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    250     8%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock_ssd                          | BUFGP                  | 18    |
+M1/M3/clock_out                    | NONE(M3/M9/Q_0)        | 2     |
+clock_pc                           | BUFGP                  | 513   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 309   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 20.491ns (Maximum Frequency: 48.802MHz)
+   Minimum input arrival time before clock: 2.480ns
+   Maximum output required time after clock: 10.228ns
+   Maximum combinational path delay: 11.511ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_ssd'
+  Clock period: 5.618ns (frequency: 177.999MHz)
+  Total number of paths / destination ports: 323 / 18
+-------------------------------------------------------------------------
+Delay:               5.618ns (Levels of Logic = 18)
+  Source:            M1/M2/Q_1 (FF)
+  Destination:       M1/M2/Q_16 (FF)
+  Source Clock:      clock_ssd rising
+  Destination Clock: clock_ssd rising
+
+  Data Path: M1/M2/Q_1 to M1/M2/Q_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  M1/M2/Q_1 (M1/M2/Q_1)
+     LUT1:I0->O            1   0.704   0.000  M1/M2/Mcount_Q_cy<1>_rt (M1/M2/Mcount_Q_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  M1/M2/Mcount_Q_cy<1> (M1/M2/Mcount_Q_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<2> (M1/M2/Mcount_Q_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<3> (M1/M2/Mcount_Q_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<4> (M1/M2/Mcount_Q_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<5> (M1/M2/Mcount_Q_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<6> (M1/M2/Mcount_Q_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<7> (M1/M2/Mcount_Q_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<8> (M1/M2/Mcount_Q_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<9> (M1/M2/Mcount_Q_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<10> (M1/M2/Mcount_Q_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<11> (M1/M2/Mcount_Q_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<12> (M1/M2/Mcount_Q_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<13> (M1/M2/Mcount_Q_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  M1/M2/Mcount_Q_cy<14> (M1/M2/Mcount_Q_cy<14>)
+     MUXCY:CI->O           0   0.059   0.000  M1/M2/Mcount_Q_cy<15> (M1/M2/Mcount_Q_cy<15>)
+     XORCY:CI->O           1   0.804   0.595  M1/M2/Mcount_Q_xor<16> (Result<16>)
+     LUT2:I0->O            1   0.704   0.000  M1/M2/Mcount_Q_eqn_161 (M1/M2/Mcount_Q_eqn_16)
+     FDC:D                     0.308          M1/M2/Q_16
+    ----------------------------------------
+    Total                      5.618ns (4.401ns logic, 1.217ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/M3/clock_out'
+  Clock period: 3.125ns (frequency: 320.000MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               3.125ns (Levels of Logic = 1)
+  Source:            M3/M9/Q_0 (FF)
+  Destination:       M3/M9/Q_0 (FF)
+  Source Clock:      M1/M3/clock_out rising
+  Destination Clock: M1/M3/clock_out rising
+
+  Data Path: M3/M9/Q_0 to M3/M9/Q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.591   1.102  M3/M9/Q_0 (M3/M9/Q_0)
+     INV:I->O              1   0.704   0.420  M3/M9/Mcount_Q_xor<0>11_INV_0 (Result<0>1)
+     FDC:D                     0.308          M3/M9/Q_0
+    ----------------------------------------
+    Total                      3.125ns (1.603ns logic, 1.522ns route)
+                                       (51.3% logic, 48.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_pc'
+  Clock period: 20.491ns (frequency: 48.802MHz)
+  Total number of paths / destination ports: 669864 / 2392
+-------------------------------------------------------------------------
+Delay:               10.246ns (Levels of Logic = 21)
+  Source:            M4/reg_a/Mram_register1 (RAM)
+  Destination:       M4/ifid_57 (FF)
+  Source Clock:      clock_pc falling
+  Destination Clock: clock_pc rising
+
+  Data Path: M4/reg_a/Mram_register1 to M4/ifid_57
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->DPO    3   1.901   0.706  M4/reg_a/Mram_register1 (M4/N266)
+     LUT4:I0->O            1   0.704   0.000  M4/id_forwarding_a/out<0>_F (N716)
+     MUXF5:I0->O           1   0.321   0.595  M4/id_forwarding_a/out<0> (M4/ifzeroin0<0>)
+     LUT4:I0->O            1   0.704   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_lut<0> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<0> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<1> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<2> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<3> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<4> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<5> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<6> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<7> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<8> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<9> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<10> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<11> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<12> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<13> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<14> (M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<14>)
+     MUXCY:CI->O           3   0.459   0.535  M4/zero_a/Mcompar_ifZero_cmp_eq0000_cy<15> (M4/shibushiling)
+     LUT4_D:I3->O         87   0.704   1.315  M4/hazard_a/IF_flush1 (M4/IF_flush)
+     LUT3:I2->O            1   0.704   0.000  M4/ifid_57_mux000024 (M4/ifid_57_mux0000)
+     FDCE:D                    0.308          M4/ifid_57
+    ----------------------------------------
+    Total                     10.246ns (7.095ns logic, 3.151ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_pc'
+  Total number of paths / destination ports: 128 / 128
+-------------------------------------------------------------------------
+Offset:              2.480ns (Levels of Logic = 1)
+  Source:            switch_register<0> (PAD)
+  Destination:       M4/reg_a/Mram_register_ren_132 (RAM)
+  Destination Clock: clock_pc falling
+
+  Data Path: switch_register<0> to M4/reg_a/Mram_register_ren_132
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.218   1.262  switch_register_0_IBUF (switch_register_0_IBUF)
+     RAM16X1D:DPRA0            0.000          M4/reg_a/Mram_register_ren_12
+    ----------------------------------------
+    Total                      2.480ns (1.218ns logic, 1.262ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/M3/clock_out'
+  Total number of paths / destination ports: 29 / 11
+-------------------------------------------------------------------------
+Offset:              6.585ns (Levels of Logic = 3)
+  Source:            M3/M9/Q_0 (FF)
+  Destination:       cathodes<6> (PAD)
+  Source Clock:      M1/M3/clock_out rising
+
+  Data Path: M3/M9/Q_0 to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.591   1.277  M3/M9/Q_0 (M3/M9/Q_0)
+     LUT3:I0->O            1   0.704   0.000  cathodes_mux0000<2>215_F (N700)
+     MUXF5:I0->O           1   0.321   0.420  cathodes_mux0000<2>215 (cathodes_2_OBUF)
+     OBUF:I->O                 3.272          cathodes_2_OBUF (cathodes<2>)
+    ----------------------------------------
+    Total                      6.585ns (4.888ns logic, 1.697ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_pc'
+  Total number of paths / destination ports: 448 / 7
+-------------------------------------------------------------------------
+Offset:              10.228ns (Levels of Logic = 6)
+  Source:            M4/reg_a/Mram_register_ren_115 (RAM)
+  Destination:       cathodes<6> (PAD)
+  Source Clock:      clock_pc falling
+
+  Data Path: M4/reg_a/Mram_register_ren_115 to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->DPO    1   1.901   0.499  M4/reg_a/Mram_register_ren_115 (M4/N34)
+     LUT3:I1->O            1   0.704   0.000  num_out<7>2 (num_out<7>2)
+     MUXF5:I0->O           7   0.321   0.883  num_out<7>_f5 (num_out<7>)
+     LUT4:I0->O            1   0.704   0.499  cathodes_mux0000<2>197_SW2 (N664)
+     LUT3:I1->O            1   0.704   0.000  cathodes_mux0000<2>215_F (N700)
+     MUXF5:I0->O           1   0.321   0.420  cathodes_mux0000<2>215 (cathodes_2_OBUF)
+     OBUF:I->O                 3.272          cathodes_2_OBUF (cathodes<2>)
+    ----------------------------------------
+    Total                     10.228ns (7.927ns logic, 2.301ns route)
+                                       (77.5% logic, 22.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1232 / 7
+-------------------------------------------------------------------------
+Delay:               11.511ns (Levels of Logic = 8)
+  Source:            switch_register<0> (PAD)
+  Destination:       cathodes<6> (PAD)
+
+  Data Path: switch_register<0> to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.218   1.262  switch_register_0_IBUF (switch_register_0_IBUF)
+     RAM16X1D:DPRA0->DPO    1   0.704   0.499  M4/reg_a/Mram_register_ren_12 (M4/N8)
+     LUT3:I1->O            1   0.704   0.000  num_out<0>1 (num_out<0>1)
+     MUXF5:I1->O           7   0.321   0.883  num_out<0>_f5 (num_out<0>)
+     LUT4:I0->O            1   0.704   0.499  cathodes_mux0000<4>198_SW1 (N666)
+     LUT3:I1->O            1   0.704   0.000  cathodes_mux0000<4>215_F (N702)
+     MUXF5:I0->O           1   0.321   0.420  cathodes_mux0000<4>215 (cathodes_4_OBUF)
+     OBUF:I->O                 3.272          cathodes_4_OBUF (cathodes<4>)
+    ----------------------------------------
+    Total                     11.511ns (7.948ns logic, 3.563ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.30 secs
+ 
+--> 
+
+Total memory usage is 220424 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   98 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

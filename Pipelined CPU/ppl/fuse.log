@@ -1,0 +1,106 @@
+Determining compilation order of HDL files
+Analyzing Verilog file ../Zero.v
+Analyzing Verilog file ../Sign_Extension.v
+Analyzing Verilog file ../Register_File.v
+Analyzing Verilog file ../PC_Choice.v
+Analyzing Verilog file ../PC.v
+Analyzing Verilog file ../mux.v
+Analyzing Verilog file ../Jump_addr.v
+Analyzing Verilog file ../Instruction_Memory.v
+Analyzing Verilog file ../HazardDetectionUnit.v
+Analyzing Verilog file ../Data_Memory.v
+Analyzing Verilog file ../Control_Unit.v
+Analyzing Verilog file ../Bypassign_Unit.v
+Analyzing Verilog file ../Branch_addr.v
+Analyzing Verilog file ../ALU_Control.v
+Analyzing Verilog file ../ALU.v
+Analyzing Verilog file ../pipeline.v
+Analyzing Verilog file ../test_pipe.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.Zero into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+zero.sdb
+Saving Verilog parse-tree work.Sign_Extension into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+sign_@extension.sdb
+Saving Verilog parse-tree work.Register_File into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+register_@file.sdb
+Saving Verilog parse-tree work.PC_Choice into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+p@c_@choice.sdb
+Saving Verilog parse-tree work.PC into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+p@c.sdb
+Saving Verilog parse-tree work.mux into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/m
+ux.sdb
+Saving Verilog parse-tree work.Jump_addr into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+jump_addr.sdb
+Saving Verilog parse-tree work.Instruction_Memory into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+instruction_@memory.sdb
+Saving Verilog parse-tree work.HazardDetectionUnit into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+hazard@detection@unit.sdb
+Saving Verilog parse-tree work.Data_Memory into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+data_@memory.sdb
+Saving Verilog parse-tree work.Control_Unit into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+control_@unit.sdb
+Saving Verilog parse-tree work.Bypassign_Unit into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+bypassign_@unit.sdb
+Saving Verilog parse-tree work.Branch_addr into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+branch_addr.sdb
+Saving Verilog parse-tree work.ALU_Control into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+a@l@u_@control.sdb
+Saving Verilog parse-tree work.ALU into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/@
+a@l@u.sdb
+Saving Verilog parse-tree work.pipeline into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/p
+ipeline.sdb
+Saving Verilog parse-tree work.test_pipe into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/t
+est_pipe.sdb
+Saving Verilog parse-tree work.glbl into
+c:/users/my/desktop/ve370/project/pipeline/finaldraft/finaldraft/ppl/isim/work/g
+lbl.sdb
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "../test_pipe.v" Line 24. Port register_out is not
+   connected to this instance
+WARNING:HDLCompiler:189 - "../test_pipe.v" Line 24. Actual bit length 1 differs
+   from formal bit length 5 for port register_switch
+Completed static elaboration
+Fuse Memory Usage: 82876 Kb
+Fuse CPU Usage: 811 ms
+Compiling module glbl
+Compiling module PC
+Compiling module Instruction_Memory
+Compiling module Sign_Extension
+Compiling module Control_Unit
+Compiling module HazardDetectionUnit
+Compiling module Register_File
+Compiling module mux(bitnum=32)
+Compiling module Zero
+Compiling module Branch_addr
+Compiling module mux(bitnum=8)
+Compiling module Jump_addr
+Compiling module PC_Choice
+Compiling module mux
+Compiling module ALU_Control
+Compiling module ALU
+Compiling module mux(bitnum=5)
+Compiling module Bypassign_Unit
+Compiling module Data_Memory
+Compiling module pipeline
+Compiling module test_pipe
+Compiled 21 Verilog Units
+Built simulation executable test_pipe_isim_beh.exe
+Fuse Memory Usage: 84988 Kb
+Fuse CPU Usage: 1343 ms
