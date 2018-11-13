@@ -1,4 +1,4 @@
-## Single cycles and 5 stages MIPS pipeline CPU design
+## Single cycles and Five stages MIPS pipeline CPU design
 A verilog model that models both single cycle and pipelined implementation of MIPS computer in Verilog that support a subset of MIPS instruction set including:
 - The memory-reference instructions load word (lw) and store word (sw)
 - The arithmetic-logical instructions add, addi, sub, and, andi, or, and slt
