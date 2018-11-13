@@ -14,3 +14,6 @@ A verilog model that models both single cycle and pipelined implementation of MI
 - Xiuneng Lu ([@lUxIUNENG](https://github.com/LuXiuneng))
 - Jianyi Zhang ("zhangjy97" <zhangjy97@sjtu.edu.cn>; )
 - Junru Zhu
+
+## FPGA
+- Nexys4 DDR™ FPGA Board (Xilinx part number XC7A100T-1CSG324C)
