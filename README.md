@@ -17,3 +17,7 @@ A verilog model that models both single cycle and pipelined implementation of MI
 
 ## FPGA
 - Nexys4 DDR™ FPGA Board (Xilinx part number XC7A100T-1CSG324C)
+
+## Software
+- Xilinx ISE
+- Adept
