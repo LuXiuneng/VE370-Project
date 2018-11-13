@@ -1,0 +1,10 @@
+MO regfile NULL regfile.v vlg72/regfile.bin 1511528732
+MO datamem NULL datamem.v vlg35/datamem.bin 1511528732
+MO mux_32 NULL mux_32.v vlg46/mux__32.bin 1511528732
+MO pc NULL pc.v vlg13/pc.bin 1511528732
+MO single_cycle_cpu NULL single_cycle_cpu.v vlg60/single__cycle__cpu.bin 1511528732
+MO signextension16_2_32 NULL signextension16_2_32.v vlg46/signextension16__2__32.bin 1511528732
+MO control NULL control.v vlg61/control.bin 1511528732
+MO instructionreg NULL instructionreg.v vlg44/instructionreg.bin 1511528732
+MO alucontrol NULL alucontrol.v vlg23/alucontrol.bin 1511528732
+MO alu NULL alu.v vlg0A/alu.bin 1511528732
