@@ -5,6 +5,8 @@ A verilog model that models both single cycle and pipelined implementation of MI
 - The jumping instructions branch equal (beq), branch not equal (bne), and jump (j)
 
 ## Team Information
+- College: Shanghai Jiao Tong University
+- Institution: University of Michigan - Shanghai Jiao Tong Univesity Joint Institution
 - Name: Group 3
 - Instructor: Prof. Gang Zheng
 - Course: VE370 Intro to Computer Organization
